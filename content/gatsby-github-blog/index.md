@@ -1,5 +1,5 @@
 ---
-emoji: 🆙
+emoji: 🆕
 title: Gatsby 테마로 GitHub Blog 만들기
 date: '2023-04-05 00:00:00'
 author: DHyeonJ
@@ -18,8 +18,6 @@ GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 
 ![github-blog-1.png](github-blog-1.png)
 
 아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository's clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.
-
-제 블로그 테마를 쓰고 싶으신 분들은 여기에 [https://github.com/zoomKoding/zoomkoding.com](https://github.com/zoomKoding/zoomkoding.com)를 넣어주세요!
 
 ![github-blog-2.png](github-blog-2.png)
 
@@ -48,7 +46,9 @@ git clone [복사한 주소]
 
 ```bash
 cd [Repository 주소]
+npm install gatsby --legacy-peer-deps # gatsby가 설치되어 있지 않는 경우에 설치해야 합니다.
 npm install
+npm install --legacy-peer-deps # npm install이 되지 않는 경우 명령어 입력하세요.
 ```
 
 ## 4. Blog 배포 준비하기
@@ -57,6 +57,9 @@ npm install
 
 ```bash
 npm install gh-pages --save-dev
+npm install gh-pages --legacy-peer-deps # npm install gh-pages이 되지 않는 경우 명령어 입력하세요.
+npm install @emotion/react # 이모지 기능이 업데이트 되면서 새로 dependency에 추가 설치해야합니다.
+npm install @emotion/styled # 이모지 기능이 업데이트 되면서 새로 dependency에 추가 설치해야합니다.
 ```
 
 그리고 나서 package.json에 다음을 추가합니다.
@@ -111,21 +114,3 @@ npm run deploy
 ```
 
 <br/>
-
-## ⭐️ 이 블로그 테마를 이용하고 싶으시다면!
-
-마지막으로 제 블로그 테마를 활용하고 싶으시다면 아래 링크를 참고해주세요!
-[https://www.zoomkoding.com/gatsby-starter-zoomkoding-introduction](https://www.zoomkoding.com/gatsby-starter-zoomkoding-introduction)
-
-궁금하신 점이 있으시다면 [이슈](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/new)로 남겨주시면 최대한 빠르게 답변 드리도록 하겠습니다!🙋‍♂️
-
-> 🤔 혹시 특정 기능이 없어서 테마 사용을 망설이시거나 제안하고 싶으신 기능이 있으시다면,  
-> 👉 [여기](https://github.com/zoomKoding/zoomkoding-gatsby-blog/issues/40)에 댓글 남겨주세요! 적극적으로 반영하겠습니다 :)
-
-<br/>
-
-**위 과정을 따라하시면서 궁금하신 점이 있다면 아래 `댓글`로 남겨주세요!👇**
-
-```toc
-
-```

@@ -43,10 +43,10 @@ module.exports = {
       // ========================================================
       // ========================================================
       {
-        date: '2023.03 ~',
+        date: '2023.04 ~',
         activity: '개인 블로그 운영',
         links: {
-          // post: '/gatsby-starter-zoomkoding-introduction',
+          post: '/gatsby-github-blog',
           github: 'https://github.com/DHyeonJ/DHyeonJ.github.io',
           demo: 'https://dhyeonj.github.io',
         },

@@ -1,9 +1,9 @@
 ---
-emoji: 🧢
-title: 쉽고 빠르게 나만의 개츠비(Gatsby) 블로그 만들기
-date: '2021-03-22 23:00:00'
-author: 줌코딩
-tags: blog gatsby theme 개츠비 테마
+emoji: 🆕
+title: Gatsby 테마로 GitHub Blog 만들기
+date: '2023-04-05 23:00:00'
+author: DHyeonJ
+tags: Blog 배포하기
 categories: 블로그 featured
 ---
 
@@ -30,7 +30,7 @@ Github Page나 Netlify 중 원하시는 배포 환경에 따라 다음 과정을
 
 아래 버튼을 활용하면 개인 계정에 `zoomkoding-gatsby-blog`를 사용하고 있는 Repository 생성과 Netlify에 배포를 동시에 진행할 수 있습니다. 이후에, 생성된 Repository를 clone합니다.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zoomkoding/zoomkoding-gatsby-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/zoomkoding/zoomkoding-gatsby-blog)dddddd
 
 ### 🏃‍♀️ 실행하기
 

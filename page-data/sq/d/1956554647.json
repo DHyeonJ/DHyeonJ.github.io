@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Gatsby 테마로 GitHub Blog 만들기","categories":"블로그 featured"},"fields":{"slug":"/gatsby-github-blog-deploy/"}}},{"node":{"frontmatter":{"title":"Gatsby 테마로 GitHub Blog 만들기","categories":"블로그 featured"},"fields":{"slug":"/gatsby-github-blog/"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Gatsby 테마로 GitHub Blog 만들기","categories":"블로그 featured"},"fields":{"slug":"/gatsby-github-blog/"}}}]}}}

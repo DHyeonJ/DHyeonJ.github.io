@@ -88,11 +88,21 @@ categories: Git
 
 - git status : 깃 저장소의 상태를 확인한다. 이 명령어를 통해 현재 상태가 어떤 지 수시로 확인 가능하다.
 
-- git add : 커밋에 파일의 변경 사항을 포함하도록 한다. 이 명령이 저장소에 새 파일들을 직접적으로 추가하진 않는다.
+- git add : 커밋에 파일의 변경 사항을 포함하도록 한다. 이 명령이 저장소에 새 파일들을 직접적으로 추가하진 않고, stash
+
+```bash
+git add . # 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.
+```
+이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
 
 ![git-instruction-add.png](git-instruction-add.png)
 
 - git commit : "git commit -m '저장명'" 등과 같은 명령어로 주로 사용한다. 이 명령어를 통해 커밋을 생성하고, 변경 사항을 확정하여 반영한다.
+
+```bash
+git commit -m "원하는 커밋 메세지" . # 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.
+```
+이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
 
 ![git-instruction-commit.png](git-instruction-commit.png)
 
@@ -106,16 +116,25 @@ categories: Git
 
 - git push : 소스 코드의 변경 사항을 원격 저장소에 반영한다.
 
+```bash
+git push origin master # git push <원격 저장소 명> <branch 명>이다.
+```
+
 ![git-instruction-push.png](git-instruction-push.png)
+
+완료가 되면 소스제어에 변경된것을 확인할 수 있다.
+![git-instruction-push-1.png](git-instruction-push-1.png)
 
 - git pull : 원격 저장소의 변경 내용이 현재 디렉토리로 가져와진 뒤, (fetch) 병합된다.
 
-![git-instruction-pull.png](git-instruction-pull.png)
+```bash
+git pull origin master # git pull <원격 저장소 명> <branch 명>이다.
+```
 
 - git merge : 변경 사항 등이 모두 확정되고 난 후, 브랜치들을 병합한다. 작업 마무리 단계에서 시행한다.
 
 ```bash
-
+git merge "<branch 명>"
 ```
 
 

@@ -102,7 +102,7 @@ git add . # 여기서 .의 의미는 모두 변경사항을 반영한다는 의�
 ```bash
 git commit -m "원하는 커밋 메세지" . # 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.
 ```
-이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
+이와 같이 `git commit -m`를 입력하면 어떤 내용을 수정해서 커밋을 찍었는지 확인할 수 있다.
 
 ![git-instruction-commit.png](git-instruction-commit.png)
 

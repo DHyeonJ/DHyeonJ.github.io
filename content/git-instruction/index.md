@@ -61,7 +61,7 @@ categories: Git
 - 깃처럼 자체적으로 구축하는 시스템이 아닌 클라우드를 빌려쓰는 개념이다.
 
 ▶︎ `Git` : 로컬에서 관리되는 버전 관리 시스템이라 혼자 작업을 하거나 작은 단위 프로젝트일 경우에 사용한다.
-<br>
+
 ▶︎ `GitHub` : 개발자간의 소스를 공유하거나 큰 단위 프로젝트를 할 때 GitHub에서 제공하는 클라우드 서비스를 이용한다.
 
 ## Git 주요개념
@@ -73,7 +73,7 @@ categories: Git
 
 2️⃣ Working Tree : 우리가 사용하는 '폴더'를 말한다.
 
-3️⃣ Index (= Staging Area) : Commit을 실행하기 전의 저장소와 Working tree 사이에 존재하는 공간을 말한다. Working Tree -> Index -> Commit 순의 절차를 거친다.
+3️⃣ Index (= Staging Area) : Commit을 실행하기 전의 저장소와 Working tree 사이에 존재하는 공간을 말한다. `Working Tree -> Index -> Commit` 순의 절차를 거친다.
 
 4️⃣ Commit : 작업 과정들에 대한 점검을 마친 뒤, 저장소에 남기는 과정을 의미한다. 각각의 커밋 단계는 의미 있는 단계이다. 따라서 커밋 로그를 남긴다. git log라는 명령어를 통해 커밋된 사항들에 대해 확인 할 수 있다.
 
@@ -82,8 +82,6 @@ categories: Git
 6️⃣ Branch : Commit 단위로 구분된 소스 코드 타임라인에서 분기해서 새로운 commit을 쌓을 수 있는 가지를 만드는 것을 말한다. Branch에서 작업을 완료하면, Merge 작업을 수행한다.
 
 7️⃣ Merge : Branch와 Branch의 내용을 합치는 작업, 즉 병합을 말한다. Branch와는 다소 반대되는 개념이다. 병합 과정 중 두 branch에서 하나의 동일한 파일에서 서로 다른게 수정한 경우 충돌이 발생하며, 병합이 일시정지 된다. 이 때, 충돌 부분에 대해 직접 수정하거나 Merge Tool 등을 활용하여 충돌을 해결한 뒤 병합을 계속 진행한다.
-
-test
 
 ## Git 명령어
 

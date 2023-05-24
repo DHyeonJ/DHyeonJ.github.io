@@ -113,11 +113,24 @@ git commit -m "원하는 커밋 메세지" .
 
 - git clone : 기존 소스 코드 다운로드 및 복제한다. 즉, 원격 저장소의 저장소를 로컬에서 이용할 수 있도록 복사해 가져온다.
 
+```bash
+git clone "Repository 주소"
+```
+
 - git log : 나의 커밋 내역에 대해 알고 싶을 때 사용하면 현재 커밋 목록들을 확인 가능하다.
 
 - git checkout : 브랜치에서 브랜치로 이동 가능하다. 현재 버전에서 이전 버전의 커밋으로 이동하거나 변경 전의 브랜치로 접근 가능하다.
 
+```bash
+git checkout # 현재 branch에서 나오기 위해 사용한다.
+```
+
 - git checkout master : 이전 버전, 변경 전 브랜치에서 다시 현재의 (master) 브랜치로 되돌아 올 수 있다.
+
+```bash
+git checkout master # 현재 branch master branch로 변경하기 위해 사용한다.
+# master branch 아닌 새로 branch를 생성하거나 원하는 branch로 이동이 가능하다.
+```
 
 - git push : 소스 코드의 변경 사항을 원격 저장소에 반영한다.
 

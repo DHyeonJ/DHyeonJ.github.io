@@ -7,7 +7,7 @@ tags: 블로그 github-pages gatsby
 categories: 블로그 featured
 ---
 
-## 1. Repository 생성하기
+## Repository 생성하기
 
 GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.
 
@@ -27,7 +27,7 @@ GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 
 
 ![github-blog-3.png](github-blog-3.png)
 
-## 2. Repository 가져오기
+## Repository 가져오기
 
 이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.
 
@@ -40,7 +40,7 @@ cd [Repository를 저장할 폴더]
 git clone [복사한 주소]
 ```
 
-## 3. Blog 설치하기
+## Blog 설치하기
 
 이제 블로그를 동작시킬 수 있도록 패키지들을 다운로드 해야하는데, 다음 명령어를 실행하시면 받을 수 있습니다.
 
@@ -51,7 +51,7 @@ npm install
 npm install --legacy-peer-deps # npm install이 되지 않는 경우 명령어 입력하세요.
 ```
 
-## 4. Blog 배포 준비하기
+## Blog 배포 준비하기
 
 그리고 이제 Gatsby 테마를 GitHub 페이지에 올리기 위해 gh-pages라는 패키지를 설치해야 합니다. 설치는 다음 명령어를 실행하시면 됩니다.
 
@@ -72,7 +72,7 @@ npm install @emotion/styled # 이모지 기능이 업데이트 되면서 새로 
 }
 ```
 
-## 5. Blog 배포하기
+## Blog 배포하기
 
 드디어 배포 준비는 다 끝났습니다. 이제 다음 명령을 실행하시면 github page에 배포하실 수 있습니다.
 
@@ -89,7 +89,7 @@ npm run deploy
 
 ![github-blog-5.png](github-blog-5.png)
 
-## 6. Repository Source Branch 변경하기
+## Repository Source Branch 변경하기
 
 마지막으로 GitHub 페이지가 작동하려면 GitHub의 Repository 설정에서 배포 할 Branch를 선택해야 합니다. 이를 위해서 Repository에 있는 Settings를 클릭하고 죄측 메뉴에서 Pages를 클릭하여 Github Pages 설정 페이지로 이동합니다.
 
@@ -99,13 +99,13 @@ npm run deploy
 
 ![github-blog-7.png](github-blog-7.png)
 
-## 7. 배포된 페이지 확인하기
+## 배포된 페이지 확인하기
 
 이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.
 
 ![github-blog-8.png](github-blog-8.png)
 
-## 8. 수정하고 배포하기
+## 수정하고 배포하기
 
 블로그를 수정하시는 방법은 각 블로그 테마마다 다를텐데요. 그에 맞춰서 변동사항을 commit하신 후에 아래 명령어를 실행하시면 변동사항이 블로그에 배포됩니다!
 
@@ -113,10 +113,12 @@ npm run deploy
 npm run deploy
 ```
 
-## 9. 참고 출처
+<hr>
+
+## 참고 출처
 
 🔗 https://www.zoomkoding.com/gatsby-github-blog/
 
-``` toc
+```toc
 
 ```

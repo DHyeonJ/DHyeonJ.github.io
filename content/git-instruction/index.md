@@ -68,92 +68,96 @@ categories: Git
 
 ✔️ Git을 사용할 때 필요한 주요 개념을 알아보자
 
-1️⃣ Repository (저장소) : 소스 코드들이 저장되어 있는 물리적인 공간을 의미한다. 저장소를 통해서 작업자가 진행, 변경했던 사항들에 대해 버전 별로 확인할 수 있다.
+1️⃣ <b>Repository (저장소)</b> : 소스 코드들이 저장되어 있는 물리적인 공간을 의미한다. 저장소를 통해서 작업자가 진행, 변경했던 사항들에 대해 버전 별로 확인할 수 있다.
 작업을 시작할 때 원격 저장소에서 로컬 저장소로 소스 코드를 복사해서 가져오고(Clone), 이후 소스 코드를 변경한 다음 커밋(Commit)한다. 이 때, 커밋한 소스는 로컬 저장소에 저장되며, Push 하기 전에는 원격 저장소에 반영되지 않는다.
 
-2️⃣ Working Tree : 우리가 사용하는 '폴더'를 말한다.
+2️⃣ <b>Working Tree</b> : 우리가 사용하는 '폴더'를 말한다.
 
-3️⃣ Index (= Staging Area) : Commit을 실행하기 전의 저장소와 Working tree 사이에 존재하는 공간을 말한다. `Working Tree -> Index -> Commit` 순의 절차를 거친다.
+3️⃣ <b>Index (= Staging Area)</b> : Commit을 실행하기 전의 저장소와 Working tree 사이에 존재하는 공간을 말한다. `Working Tree -> Index -> Commit` 순의 절차를 거친다.
 
-4️⃣ Commit : 작업 과정들에 대한 점검을 마친 뒤, 저장소에 남기는 과정을 의미한다. 각각의 커밋 단계는 의미 있는 단계이다. 따라서 커밋 로그를 남긴다. git log라는 명령어를 통해 커밋된 사항들에 대해 확인 할 수 있다.
+4️⃣ <b>Commit</b> : 작업 과정들에 대한 점검을 마친 뒤, 저장소에 남기는 과정을 의미한다. 각각의 커밋 단계는 의미 있는 단계이다. 따라서 커밋 로그를 남긴다. git log라는 명령어를 통해 커밋된 사항들에 대해 확인 할 수 있다.
 
-5️⃣ Checkout : 특정 시점이나 branch의 소스 코드로 이동하는 것을 의미한다. 이 과정을 통해 과거 여러 시점의 소스 코드로 이동할 수 있다.
+5️⃣ <b>Checkout</b> : 특정 시점이나 branch의 소스 코드로 이동하는 것을 의미한다. 이 과정을 통해 과거 여러 시점의 소스 코드로 이동할 수 있다.
 
-6️⃣ Branch : Commit 단위로 구분된 소스 코드 타임라인에서 분기해서 새로운 commit을 쌓을 수 있는 가지를 만드는 것을 말한다. Branch에서 작업을 완료하면, Merge 작업을 수행한다.
+6️⃣ <b>Branch</b> : Commit 단위로 구분된 소스 코드 타임라인에서 분기해서 새로운 commit을 쌓을 수 있는 가지를 만드는 것을 말한다. Branch에서 작업을 완료하면, Merge 작업을 수행한다.
 
-7️⃣ Merge : Branch와 Branch의 내용을 합치는 작업, 즉 병합을 말한다. Branch와는 다소 반대되는 개념이다. 병합 과정 중 두 branch에서 하나의 동일한 파일에서 서로 다른게 수정한 경우 충돌이 발생하며, 병합이 일시정지 된다. 이 때, 충돌 부분에 대해 직접 수정하거나 Merge Tool 등을 활용하여 충돌을 해결한 뒤 병합을 계속 진행한다.
+7️⃣ <b>Merge</b> : Branch와 Branch의 내용을 합치는 작업, 즉 병합을 말한다. Branch와는 다소 반대되는 개념이다. 병합 과정 중 두 branch에서 하나의 동일한 파일에서 서로 다른게 수정한 경우 충돌이 발생하며, 병합이 일시정지 된다. 이 때, 충돌 부분에 대해 직접 수정하거나 Merge Tool 등을 활용하여 충돌을 해결한 뒤 병합을 계속 진행한다.
 
 ## Git 명령어
 
 ✔️ 소스코드를 관리할 때 사용되는 명령어들을 알아보자.
 
-- git init : 깃 초기화. 이 명령어를 실행해야만 깃이 실행된다. 이 명령어 실행 전까지는 그냥 일반 폴더일 뿐이나, 이후엔 추가적인 명령어들을 통해 작업을 진행 할 수 있다.
+- <b>git init</b> : 깃 초기화. 이 명령어를 실행해야만 깃이 실행된다. 이 명령어 실행 전까지는 그냥 일반 폴더일 뿐이나, 이후엔 추가적인 명령어들을 통해 작업을 진행 할 수 있다.
 
-- git status : 깃 저장소의 상태를 확인한다. 이 명령어를 통해 현재 상태가 어떤 지 수시로 확인 가능하다.
+- <b>git status</b> : 깃 저장소의 상태를 확인한다. 이 명령어를 통해 현재 상태가 어떤 지 수시로 확인 가능하다.
 
-- git add : 커밋에 파일의 변경 사항을 포함하도록 한다. 이 명령이 저장소에 새 파일들을 직접적으로 추가하진 않고, stash
+- <b>git add</b> : 커밋에 파일의 변경 사항을 포함하도록 한다. 이 명령이 저장소에 새 파일들을 직접적으로 추가하진 않고, stash
 
-```bash
-git add . # 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.
-```
+  ```bash
+  git add . # 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.
+  ```
 
-이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
+  <br>
+      이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
 
 ![git-instruction-add.png](git-instruction-add.png)
 
-- git commit : "git commit -m '저장명'" 등과 같은 명령어로 주로 사용한다. 이 명령어를 통해 커밋을 생성하고, 변경 사항을 확정하여 반영한다.
+- <b>git commit</b> : `git commit -m '저장명'` 등과 같은 명령어로 주로 사용한다. 이 명령어를 통해 커밋을 생성하고, 변경 사항을 확정하여 반영한다.
 
-```bash
-git commit -m "원하는 커밋 메세지" .
-```
+  ```bash
+  git commit -m "원하는 커밋 메세지" .ß
+  ```
 
-이와 같이 `git commit -m`를 입력하면 어떤 내용을 수정해서 커밋을 찍었는지 확인할 수 있다.
+  이와 같이 `git commit -m`를 입력하면 어떤 내용을 수정해서 커밋을 찍었는지 확인할 수 있다.
 
 ![git-instruction-commit.png](git-instruction-commit.png)
 
-- git clone : 기존 소스 코드 다운로드 및 복제한다. 즉, 원격 저장소의 저장소를 로컬에서 이용할 수 있도록 복사해 가져온다.
+- <b>git clone</b> : 기존 소스 코드 다운로드 및 복제한다. 즉, 원격 저장소의 저장소를 로컬에서 이용할 수 있도록 복사해 가져온다.
 
-```bash
-git clone "Repository 주소"
-```
+  ```bash
+  git clone "Repository 주소"
+  ```
 
-- git log : 나의 커밋 내역에 대해 알고 싶을 때 사용하면 현재 커밋 목록들을 확인 가능하다.
+- <b>git log</b> : 나의 커밋 내역에 대해 알고 싶을 때 사용하면 현재 커밋 목록들을 확인 가능하다.
 
-- git checkout : 브랜치에서 브랜치로 이동 가능하다. 현재 버전에서 이전 버전의 커밋으로 이동하거나 변경 전의 브랜치로 접근 가능하다.
+- <b>git checkout</b> : 브랜치에서 브랜치로 이동 가능하다. 현재 버전에서 이전 버전의 커밋으로 이동하거나 변경 전의 브랜치로 접근 가능하다.
 
-```bash
-git checkout # 현재 branch에서 나오기 위해 사용한다.
-```
+  ```bash
+  git checkout # 현재 branch에서 나오기 위해 사용한다.
+  ```
 
-- git checkout master : 이전 버전, 변경 전 브랜치에서 다시 현재의 (master) 브랜치로 되돌아 올 수 있다.
+- <b>git checkout master</b> : 이전 버전, 변경 전 브랜치에서 다시 현재의 (master) 브랜치로 되돌아 올 수 있다.
 
-```bash
-git checkout master # 현재 branch master branch로 변경하기 위해 사용한다.
-# master branch 아닌 새로 branch를 생성하거나 원하는 branch로 이동이 가능하다.
-```
+  ```bash
+  git checkout master # 현재 branch master branch로 변경하기 위해 사용한다.
+                      # master branch 아닌 새로 branch를 생성하거나 원하는 branch로 이동이 가능하다.
+  ```
 
-- git push : 소스 코드의 변경 사항을 원격 저장소에 반영한다.
+- <b>git push</b> : 소스 코드의 변경 사항을 원격 저장소에 반영한다.
 
-```bash
-git push origin master # git push <원격 저장소 명> <branch 명>이다.
-```
+  ```bash
+  git push origin master # git push <원격 저장소 명> <branch 명>이다.
+  ```
 
 ![git-instruction-push.png](git-instruction-push.png)
 
 완료가 되면 소스제어에 변경된것을 확인할 수 있다.
+
 ![git-instruction-push-1.png](git-instruction-push-1.png)
 
-- git pull : 원격 저장소의 변경 내용이 현재 디렉토리로 가져와진 뒤, (fetch) 병합된다.
+- <b>git pull</b> : 원격 저장소의 변경 내용이 현재 디렉토리로 가져와진 뒤, (fetch) 병합된다.
 
-```bash
-git pull origin master # git pull <원격 저장소 명> <branch 명>이다.
-```
+  ```bash
+  git pull origin master # git pull <원격 저장소 명> <branch 명>이다.
+  ```
 
-- git merge : 변경 사항 등이 모두 확정되고 난 후, 브랜치들을 병합한다. 작업 마무리 단계에서 시행한다.
+- <b>git merge</b> : 변경 사항 등이 모두 확정되고 난 후, 브랜치들을 병합한다. 작업 마무리 단계에서 시행한다.
 
-```bash
-git merge "<branch 명>"
-```
+  ```bash
+  git merge "<branch 명>"
+  ```
+
+<hr>
 
 ## 출처
 

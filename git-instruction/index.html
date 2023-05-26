@@ -14,7 +14,7 @@
       
       
       
-      }</script><link rel="icon" href="/favicon-32x32.png?v=556f7ceb1734cda8f74c3ebf1e3067d2" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=556f7ceb1734cda8f74c3ebf1e3067d2"/><style type="text/css">
+      }</script><link rel="icon" href="/favicon-32x32.png?v=bd0e987c663bee3e7190a28b134d878d" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=bd0e987c663bee3e7190a28b134d878d"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=bd0e987c663bee3e7190a28b134d878d"/><style type="text/css">
     .anchor.before {
       position: absolute;
       top: 0;
@@ -155,29 +155,30 @@
 <p>▶︎ <code class="language-text">GitHub</code> : 개발자간의 소스를 공유하거나 큰 단위 프로젝트를 할 때 GitHub에서 제공하는 클라우드 서비스를 이용한다.</p>
 <h2 id="git-주요개념" style="position:relative;"><a href="#git-%EC%A3%BC%EC%9A%94%EA%B0%9C%EB%85%90" aria-label="git 주요개념 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git 주요개념</h2>
 <p>✔️ Git을 사용할 때 필요한 주요 개념을 알아보자</p>
-<p>1️⃣ Repository (저장소) : 소스 코드들이 저장되어 있는 물리적인 공간을 의미한다. 저장소를 통해서 작업자가 진행, 변경했던 사항들에 대해 버전 별로 확인할 수 있다.
+<p>1️⃣ <b>Repository (저장소)</b> : 소스 코드들이 저장되어 있는 물리적인 공간을 의미한다. 저장소를 통해서 작업자가 진행, 변경했던 사항들에 대해 버전 별로 확인할 수 있다.
 작업을 시작할 때 원격 저장소에서 로컬 저장소로 소스 코드를 복사해서 가져오고(Clone), 이후 소스 코드를 변경한 다음 커밋(Commit)한다. 이 때, 커밋한 소스는 로컬 저장소에 저장되며, Push 하기 전에는 원격 저장소에 반영되지 않는다.</p>
-<p>2️⃣ Working Tree : 우리가 사용하는 ‘폴더’를 말한다.</p>
-<p>3️⃣ Index (= Staging Area) : Commit을 실행하기 전의 저장소와 Working tree 사이에 존재하는 공간을 말한다. <code class="language-text">Working Tree -> Index -> Commit</code> 순의 절차를 거친다.</p>
-<p>4️⃣ Commit : 작업 과정들에 대한 점검을 마친 뒤, 저장소에 남기는 과정을 의미한다. 각각의 커밋 단계는 의미 있는 단계이다. 따라서 커밋 로그를 남긴다. git log라는 명령어를 통해 커밋된 사항들에 대해 확인 할 수 있다.</p>
-<p>5️⃣ Checkout : 특정 시점이나 branch의 소스 코드로 이동하는 것을 의미한다. 이 과정을 통해 과거 여러 시점의 소스 코드로 이동할 수 있다.</p>
-<p>6️⃣ Branch : Commit 단위로 구분된 소스 코드 타임라인에서 분기해서 새로운 commit을 쌓을 수 있는 가지를 만드는 것을 말한다. Branch에서 작업을 완료하면, Merge 작업을 수행한다.</p>
-<p>7️⃣ Merge : Branch와 Branch의 내용을 합치는 작업, 즉 병합을 말한다. Branch와는 다소 반대되는 개념이다. 병합 과정 중 두 branch에서 하나의 동일한 파일에서 서로 다른게 수정한 경우 충돌이 발생하며, 병합이 일시정지 된다. 이 때, 충돌 부분에 대해 직접 수정하거나 Merge Tool 등을 활용하여 충돌을 해결한 뒤 병합을 계속 진행한다.</p>
+<p>2️⃣ <b>Working Tree</b> : 우리가 사용하는 ‘폴더’를 말한다.</p>
+<p>3️⃣ <b>Index (= Staging Area)</b> : Commit을 실행하기 전의 저장소와 Working tree 사이에 존재하는 공간을 말한다. <code class="language-text">Working Tree -> Index -> Commit</code> 순의 절차를 거친다.</p>
+<p>4️⃣ <b>Commit</b> : 작업 과정들에 대한 점검을 마친 뒤, 저장소에 남기는 과정을 의미한다. 각각의 커밋 단계는 의미 있는 단계이다. 따라서 커밋 로그를 남긴다. git log라는 명령어를 통해 커밋된 사항들에 대해 확인 할 수 있다.</p>
+<p>5️⃣ <b>Checkout</b> : 특정 시점이나 branch의 소스 코드로 이동하는 것을 의미한다. 이 과정을 통해 과거 여러 시점의 소스 코드로 이동할 수 있다.</p>
+<p>6️⃣ <b>Branch</b> : Commit 단위로 구분된 소스 코드 타임라인에서 분기해서 새로운 commit을 쌓을 수 있는 가지를 만드는 것을 말한다. Branch에서 작업을 완료하면, Merge 작업을 수행한다.</p>
+<p>7️⃣ <b>Merge</b> : Branch와 Branch의 내용을 합치는 작업, 즉 병합을 말한다. Branch와는 다소 반대되는 개념이다. 병합 과정 중 두 branch에서 하나의 동일한 파일에서 서로 다른게 수정한 경우 충돌이 발생하며, 병합이 일시정지 된다. 이 때, 충돌 부분에 대해 직접 수정하거나 Merge Tool 등을 활용하여 충돌을 해결한 뒤 병합을 계속 진행한다.</p>
 <h2 id="git-명령어" style="position:relative;"><a href="#git-%EB%AA%85%EB%A0%B9%EC%96%B4" aria-label="git 명령어 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Git 명령어</h2>
 <p>✔️ 소스코드를 관리할 때 사용되는 명령어들을 알아보자.</p>
 <ul>
 <li>
-<p>git init : 깃 초기화. 이 명령어를 실행해야만 깃이 실행된다. 이 명령어 실행 전까지는 그냥 일반 폴더일 뿐이나, 이후엔 추가적인 명령어들을 통해 작업을 진행 할 수 있다.</p>
+<p><b>git init</b> : 깃 초기화. 이 명령어를 실행해야만 깃이 실행된다. 이 명령어 실행 전까지는 그냥 일반 폴더일 뿐이나, 이후엔 추가적인 명령어들을 통해 작업을 진행 할 수 있다.</p>
 </li>
 <li>
-<p>git status : 깃 저장소의 상태를 확인한다. 이 명령어를 통해 현재 상태가 어떤 지 수시로 확인 가능하다.</p>
+<p><b>git status</b> : 깃 저장소의 상태를 확인한다. 이 명령어를 통해 현재 상태가 어떤 지 수시로 확인 가능하다.</p>
 </li>
 <li>
-<p>git add : 커밋에 파일의 변경 사항을 포함하도록 한다. 이 명령이 저장소에 새 파일들을 직접적으로 추가하진 않고, stash</p>
+<p><b>git add</b> : 커밋에 파일의 변경 사항을 포함하도록 한다. 이 명령이 저장소에 새 파일들을 직접적으로 추가하진 않고, stash</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> <span class="token comment"># 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.</span></code></pre></div>
+<br>
+    이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
 </li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span> <span class="token comment"># 여기서 .의 의미는 모두 변경사항을 반영한다는 의미이다.</span></code></pre></div>
-<p>이와 같이 <code class="language-text">git add .</code>를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 238px; "
@@ -200,10 +201,12 @@
       />
     </span></p>
 <ul>
-<li>git commit : “git commit -m ‘저장명’” 등과 같은 명령어로 주로 사용한다. 이 명령어를 통해 커밋을 생성하고, 변경 사항을 확정하여 반영한다.</li>
-</ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"원하는 커밋 메세지"</span> <span class="token builtin class-name">.</span></code></pre></div>
+<li>
+<p><b>git commit</b> : <code class="language-text">git commit -m '저장명'</code> 등과 같은 명령어로 주로 사용한다. 이 명령어를 통해 커밋을 생성하고, 변경 사항을 확정하여 반영한다.</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> commit <span class="token parameter variable">-m</span> <span class="token string">"원하는 커밋 메세지"</span> .ß</code></pre></div>
 <p>이와 같이 <code class="language-text">git commit -m</code>를 입력하면 어떤 내용을 수정해서 커밋을 찍었는지 확인할 수 있다.</p>
+</li>
+</ul>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 236px; "
@@ -226,27 +229,27 @@
       />
     </span></p>
 <ul>
-<li>git clone : 기존 소스 코드 다운로드 및 복제한다. 즉, 원격 저장소의 저장소를 로컬에서 이용할 수 있도록 복사해 가져온다.</li>
-</ul>
+<li>
+<p><b>git clone</b> : 기존 소스 코드 다운로드 및 복제한다. 즉, 원격 저장소의 저장소를 로컬에서 이용할 수 있도록 복사해 가져온다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> clone <span class="token string">"Repository 주소"</span></code></pre></div>
-<ul>
-<li>
-<p>git log : 나의 커밋 내역에 대해 알고 싶을 때 사용하면 현재 커밋 목록들을 확인 가능하다.</p>
 </li>
 <li>
-<p>git checkout : 브랜치에서 브랜치로 이동 가능하다. 현재 버전에서 이전 버전의 커밋으로 이동하거나 변경 전의 브랜치로 접근 가능하다.</p>
+<p><b>git log</b> : 나의 커밋 내역에 대해 알고 싶을 때 사용하면 현재 커밋 목록들을 확인 가능하다.</p>
 </li>
-</ul>
+<li>
+<p><b>git checkout</b> : 브랜치에서 브랜치로 이동 가능하다. 현재 버전에서 이전 버전의 커밋으로 이동하거나 변경 전의 브랜치로 접근 가능하다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> checkout <span class="token comment"># 현재 branch에서 나오기 위해 사용한다.</span></code></pre></div>
-<ul>
-<li>git checkout master : 이전 버전, 변경 전 브랜치에서 다시 현재의 (master) 브랜치로 되돌아 올 수 있다.</li>
-</ul>
+</li>
+<li>
+<p><b>git checkout master</b> : 이전 버전, 변경 전 브랜치에서 다시 현재의 (master) 브랜치로 되돌아 올 수 있다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> checkout master <span class="token comment"># 현재 branch master branch로 변경하기 위해 사용한다.</span>
-<span class="token comment"># master branch 아닌 새로 branch를 생성하거나 원하는 branch로 이동이 가능하다.</span></code></pre></div>
-<ul>
-<li>git push : 소스 코드의 변경 사항을 원격 저장소에 반영한다.</li>
-</ul>
+                    <span class="token comment"># master branch 아닌 새로 branch를 생성하거나 원하는 branch로 이동이 가능하다.</span></code></pre></div>
+</li>
+<li>
+<p><b>git push</b> : 소스 코드의 변경 사항을 원격 저장소에 반영한다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> push origin master <span class="token comment"># git push &lt;원격 저장소 명> &lt;branch 명>이다.</span></code></pre></div>
+</li>
+</ul>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 506px; "
@@ -269,8 +272,8 @@
         decoding="async"
       />
     </span></p>
-<p>완료가 되면 소스제어에 변경된것을 확인할 수 있다.
-<span
+<p>완료가 되면 소스제어에 변경된것을 확인할 수 있다.</p>
+<p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 241px; "
     >
@@ -292,13 +295,16 @@
       />
     </span></p>
 <ul>
-<li>git pull : 원격 저장소의 변경 내용이 현재 디렉토리로 가져와진 뒤, (fetch) 병합된다.</li>
-</ul>
+<li>
+<p><b>git pull</b> : 원격 저장소의 변경 내용이 현재 디렉토리로 가져와진 뒤, (fetch) 병합된다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> pull origin master <span class="token comment"># git pull &lt;원격 저장소 명> &lt;branch 명>이다.</span></code></pre></div>
-<ul>
-<li>git merge : 변경 사항 등이 모두 확정되고 난 후, 브랜치들을 병합한다. 작업 마무리 단계에서 시행한다.</li>
-</ul>
+</li>
+<li>
+<p><b>git merge</b> : 변경 사항 등이 모두 확정되고 난 후, 브랜치들을 병합한다. 작업 마무리 단계에서 시행한다.</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">git</span> merge <span class="token string">"&lt;branch 명>"</span></code></pre></div>
+</li>
+</ul>
+<hr>
 <h2 id="출처" style="position:relative;"><a href="#%EC%B6%9C%EC%B2%98" aria-label="출처 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>출처</h2>
 <ul>
 <li>🔗 <a href="https://velog.io/@hxyxneee/git%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80">https://velog.io/@hxyxneee/git%EC%9D%B4%EB%9E%80-%EB%AC%B4%EC%97%87%EC%9D%B8%EA%B0%80</a></li>
@@ -330,4 +336,4 @@
 <p><a href="#%EC%B6%9C%EC%B2%98">출처</a></p>
 </li>
 </ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/gatsby-github-blog/"><div class="direction">이전 글</div><div class="title">Gatsby 테마로 GitHub Blog 만들기</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/Js/01_JSHistory/"><div class="direction">다음 글</div><div class="title">JavaScript 언어의 특징과 역사</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2023<!-- --> <a href="https://github.com/DHyeonJ">전대현</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/git-instruction/";window.___webpackCompilationHash="3aeb6dfe5a488ae0864b";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-16a8528ca6bd9994237a.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-cdbcf8bf093b3cef2226.js"],"component---src-pages-about-js":["/component---src-pages-about-js-8837878b157b87affc47.js"],"component---src-pages-index-js":["/component---src-pages-index-js-571cb1efb88080236649.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-1edc9b6b2a92d9d88c5e.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-42b093a57d7b028f6bc3.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-16a8528ca6bd9994237a.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-0791dafef3646e49d410.js" async=""></script></body></html>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/gatsby-github-blog/"><div class="direction">이전 글</div><div class="title">Gatsby 테마로 GitHub Blog 만들기</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/react-camp-JS/camp-JS-1day/"><div class="direction">다음 글</div><div class="title">JavaScript 언어의 특징과 역사</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2023<!-- --> <a href="https://github.com/DHyeonJ">전대현</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/git-instruction/";window.___webpackCompilationHash="b51108876e2aec30ef23";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-f196834924f88edde8fc.js"],"app":["/app-599f0643e1e306697e27.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-cdbcf8bf093b3cef2226.js"],"component---src-pages-about-js":["/component---src-pages-about-js-8837878b157b87affc47.js"],"component---src-pages-index-js":["/component---src-pages-index-js-571cb1efb88080236649.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-1edc9b6b2a92d9d88c5e.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-42b093a57d7b028f6bc3.js"]};/*]]>*/</script><script src="/polyfill-f196834924f88edde8fc.js" nomodule=""></script><script src="/app-599f0643e1e306697e27.js" async=""></script><script src="/framework-de157c6b30d4790e4e81.js" async=""></script><script src="/webpack-runtime-0791dafef3646e49d410.js" async=""></script></body></html>

@@ -3,7 +3,7 @@ emoji: 📝
 title: 동기, 비동기
 date: '2023-05-26 19:30:00'
 author: DHyeonJ
-tags: 회고
+tags: 일일회고
 categories: 회고
 ---
 
@@ -116,7 +116,7 @@ categories: 회고
 
   ### 비동기 작업의 동기적 표현
 
-  #### 1. Promise (1)
+  #### 1. Promise
 
   ✔️ Promise : 비동기 처리에 대해, 처리가 끝나면 알려준다.
 
@@ -126,11 +126,21 @@ categories: 회고
 
   - 따라서, 비동기작업이 완료될 때 비로소 `resolve, reject` 호출한다.
 
-  #### 2. Promise (2)
+  #### 2. Generator
 
-  #### 3. Generator
+  - 제너레이터 문법은 반복(iterable)할 수 있는 iterable 객체를 생성한다.
 
-  #### 4. Promise + Async/await
+  - iterator 객체가 반환(next()를 가지고 있다)
+
+  - yield : 양보, 이루다.
+
+  - 비동기 `작업이 완료되는 시점마다 next 메서드를 호출해주면` Generator 함수 내부소스가 위 -> 아래 `순차적`으로 진행된다.
+
+  #### 3. Promise + Async/await
+
+  - ES2017에서 새롭게 추가된 `Async/await`문을 이용했다.
+
+  - 비동기 작업을 수행하는 함수 앞에 `async` 함수 내부에서 실질적인 비동기 작업이 필요한 위치마다 `await`를 붙여 사용하면 된다.
 
 ```toc
 

@@ -3,7 +3,7 @@ emoji: 📝
 title: JavaScript 언어의 특징과 역사
 date: '2023-05-22 23:38:00'
 author: DHyeonJ
-tags: 회고
+tags: 일일회고
 categories: 회고
 ---
 

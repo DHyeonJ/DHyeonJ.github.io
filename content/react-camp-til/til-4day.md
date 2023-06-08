@@ -3,7 +3,7 @@ emoji: 📝
 title: JavaScript 3주차 quiz
 date: '2023-05-25 19:30:00'
 author: DHyeonJ
-tags: 회고
+tags: 일일회고
 categories: 회고
 ---
 

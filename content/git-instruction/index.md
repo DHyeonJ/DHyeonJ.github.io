@@ -34,14 +34,14 @@ categories: Git
 
 ✔️ My1 컴퓨터에서 소스코드를 수정하고나서 `push`를 통해 GitHub에 올리면 다른 My2 컴퓨터에서 `pull`를 통해 수정한 소스를 받을 수 있다.
 
-![git-instruction-1.png](git-instruction-1.png)
+![img/git-instruction-1.png](img/git-instruction-1.png)
 
 ### 3. Collaborate(협업)
 
 ✔️ 내가 맡은 부분을 My 컴퓨터에서 소스를 수정하고 `push`를 통해 GitHub에 올리면 협업자가 `pull`를 통해 내가 수정한 부분을 other 컴퓨터에서 내려 받을 수 있고,
 반대로 협업자가 맡은 부분을 other 컴퓨터에서 소스를 수정하고 `push`를 통해 GitHub에 올리면 내가 `pull`를 통해 My 컴퓨터에 반영할 수 있다.
 
-![git-instruction-2.png](git-instruction-2.png)
+![img/git-instruction-2.png](img/git-instruction-2.png)
 
 ## Git과 GitHUB의 연관성
 
@@ -100,17 +100,17 @@ categories: Git
   <br>
       이와 같이 `git add .`를 입력하면 변경사항에 있던 파일이 스테이징된 변경사항으로 이동한다.
 
-![git-instruction-add.png](git-instruction-add.png)
+![img/git-instruction-add.png](img/git-instruction-add.png)
 
 - <b>git commit</b> : `git commit -m '저장명'` 등과 같은 명령어로 주로 사용한다. 이 명령어를 통해 커밋을 생성하고, 변경 사항을 확정하여 반영한다.
 
   ```bash
-  git commit -m "원하는 커밋 메세지" .ß
+  git commit -m "원하는 커밋 메세지"
   ```
 
   이와 같이 `git commit -m`를 입력하면 어떤 내용을 수정해서 커밋을 찍었는지 확인할 수 있다.
 
-![git-instruction-commit.png](git-instruction-commit.png)
+![img/git-instruction-commit.png](img/git-instruction-commit.png)
 
 - <b>git clone</b> : 기존 소스 코드 다운로드 및 복제한다. 즉, 원격 저장소의 저장소를 로컬에서 이용할 수 있도록 복사해 가져온다.
 
@@ -139,11 +139,11 @@ categories: Git
   git push origin master # git push <원격 저장소 명> <branch 명>이다.
   ```
 
-![git-instruction-push.png](git-instruction-push.png)
+![img/git-instruction-push.png](img/git-instruction-push.png)
 
 완료가 되면 소스제어에 변경된것을 확인할 수 있다.
 
-![git-instruction-push-1.png](git-instruction-push-1.png)
+![img/git-instruction-push-1.png](img/git-instruction-push-1.png)
 
 - <b>git pull</b> : 원격 저장소의 변경 내용이 현재 디렉토리로 가져와진 뒤, (fetch) 병합된다.
 

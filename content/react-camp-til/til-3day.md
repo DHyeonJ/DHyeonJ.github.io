@@ -3,8 +3,8 @@ emoji: 📝
 title: JavaScript 2주차 quiz
 date: '2023-05-24 19:30:00'
 author: DHyeonJ
-tags: 일일회고
-categories: 회고
+tags: 내일배움캠프
+categories: 내일배움캠프
 ---
 
 # 230523 내일배움캠프 3일차

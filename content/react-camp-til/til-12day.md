@@ -60,6 +60,7 @@ function heartLight() {
   }
   const like = document.querySelector('#btn');
   like.classList.toggle('fa-solid');
+  s;
 }
 ```
 

@@ -11,27 +11,27 @@ categories: 블로그 featured
 
 GitHub Blog를 만들려면 Github에 Repository를 생성해야 합니다.
 
-![github-blog.png](github-blog.png)
+![img/github-blog.png](img/github-blog.png)
 
 GitHub에 로그인 한 뒤에 우측 상단에 있는 New Repository 버튼을 클릭하면 repository 생성 페이지로 이동하게 됩니다. 이 때 Import a repository 버튼을 클릭합니다.
 
-![github-blog-1.png](github-blog-1.png)
+![img/github-blog-1.png](img/github-blog-1.png)
 
 아래 페이지에 도달하시면 두 가지 정보를 넣어주셔야 하는데, Your old repository's clone URL에는 사용하고자 하는 gatsby 테마가 있는 repository의 주소를 넣어주시면 됩니다.
 
-![github-blog-2.png](github-blog-2.png)
+![img/github-blog-2.png](img/github-blog-2.png)
 
 그럼 이제 Repository Name을 입력해줍니다. 이 때 주의할 점은 Repository명은 꼭 [GitHubID].github.io로 설정하셔야 합니다.
 
 그리고 Begin Import 버튼을 클릭하고 조금 기다리면 선택하신 블로그 테마를 import한 Repository가 생성되게 됩니다.
 
-![github-blog-3.png](github-blog-3.png)
+![img/github-blog-3.png](img/github-blog-3.png)
 
 ## Repository 가져오기
 
 이제 실제로 수정하고 배포할 수도록 내 컴퓨터(local)에 Repsitory를 가져와볼 건데요! 먼저 Repository에서 아래와 같이 초록색 Code 버튼을 클릭하면 링크가 나오게 되는데, 이 링크를 복사합니다.
 
-![github-blog-4.png](github-blog-4.png)
+![img/github-blog-4.png](img/github-blog-4.png)
 
 그리고 아래 명령어를 수행하여 블로그를 다운로드합니다.
 
@@ -87,23 +87,23 @@ npm run deploy
 
 > 💡 혹시 그 외에 다른 에러가 발생하신다면 아래에 댓글로 에러 내용을 알려주세요!
 
-![github-blog-5.png](github-blog-5.png)
+![img/github-blog-5.png](img/github-blog-5.png)
 
 ## Repository Source Branch 변경하기
 
 마지막으로 GitHub 페이지가 작동하려면 GitHub의 Repository 설정에서 배포 할 Branch를 선택해야 합니다. 이를 위해서 Repository에 있는 Settings를 클릭하고 죄측 메뉴에서 Pages를 클릭하여 Github Pages 설정 페이지로 이동합니다.
 
-![github-blog-6.png](github-blog-6.png)
+![img/github-blog-6.png](img/github-blog-6.png)
 
 여기서 Source에 있는 Branch를 master(main)에서 gh-pages로 변경한 후에 저장합니다.
 
-![github-blog-7.png](github-blog-7.png)
+![img/github-blog-7.png](img/github-blog-7.png)
 
 ## 배포된 페이지 확인하기
 
 이제 실제로 잘 배포가 되었는지 확인해봅시다. 여태까지 문제가 없으셨다면 [GitHubID].github.io에 접근했을 때 블로그가 잘 보이는 것을 확인하실 수 있으실 겁니다.
 
-![github-blog-8.png](github-blog-8.png)
+![img/github-blog-8.png](img/github-blog-8.png)
 
 ## 수정하고 배포하기
 

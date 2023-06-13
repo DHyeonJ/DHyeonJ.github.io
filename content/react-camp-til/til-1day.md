@@ -3,8 +3,8 @@ emoji: 📝
 title: JavaScript 언어의 특징과 역사
 date: '2023-05-22 23:38:00'
 author: DHyeonJ
-tags: 일일회고
-categories: 회고
+tags: 내일배움캠프
+categories: 내일배움캠프
 ---
 
 ## 프로그래밍 언어란?
